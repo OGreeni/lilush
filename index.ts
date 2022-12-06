@@ -47,7 +47,7 @@ export const createStore = <T extends Record<string, StoreValues>>(
 
     useMemo(() => {
       instance.addEventListener(key, () => {
-        setCount((c) => (c + 1) % Number.MAX_SAFE_INTEGER);
+        setCount((c) => (c + 1) % 999999);
       });
     }, [key]);
 
