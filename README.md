@@ -2,7 +2,7 @@
 
 A minimal, zero-dependency, TypeScript-first state manager for React
 
-## Get Started With Lilush
+## Getting Started With Lilush
 
 ### Creating a Store
 
