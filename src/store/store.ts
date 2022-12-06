@@ -1,4 +1,4 @@
-import { createStore } from '../hooks/useStore';
+import { createStore } from 'lilush';
 
 export const useStore = createStore(
   // define the initial state object
