@@ -1,6 +1,6 @@
 {
   "name": "lilush",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Minimal, zero-dependency, TypeScript-first state manager for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
