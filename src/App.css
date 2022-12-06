@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* Start reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* End reset */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-size: 300% 100%;
+  background-image: linear-gradient(-45deg, #eafce6, #ceffc2);
+  animation: background-pan 3s linear infinite alternate;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.lilush {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 300% 100%;
+  background-image: linear-gradient(-45deg, #90ee90, #4cbb17);
+  animation: background-pan 3s linear infinite alternate;
+}
+
+.secondary-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.increment-age {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.button {
+  color: white;
+  font: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background-color: #77dd77;
+  border: 1px solid #00a86b;
+  border-radius: 10px;
+  transition: background-color 200ms linear;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-weight: bold;
+  margin-inline: 1rem;
+}
+
+.button:hover {
+  background-color: white;
+  color: #77dd77;
+}
+
+.reload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reload img {
+  width: 1rem;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(187deg)
+    brightness(103%) contrast(101%);
+}
+
+.reload:hover img {
+  filter: invert(81%) sepia(14%) saturate(1319%) hue-rotate(68deg)
+    brightness(91%) contrast(100%);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  color: white;
+  background-color: #20232a;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+  border-bottom: 1px solid white;
+}
+
+@keyframes background-pan {
+  to {
+    background-position: 100% center;
+  }
+}
