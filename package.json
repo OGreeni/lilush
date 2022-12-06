@@ -4,6 +4,16 @@
   "description": "Minimal, zero-dependency, TypeScript-first state manager for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "state",
+    "manager",
+    "management",
+    "store",
+    "state-manager",
+    "redux",
+    "recoil"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "tsc"

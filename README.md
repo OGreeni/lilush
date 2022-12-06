@@ -42,7 +42,7 @@ export const useStore = createStore(
 import { useStore } from './store/store';
 
 export default function Button() {
-  const [age, setAge] = useStore('age'); // Completely type-safe
+  const [age, setAge] = useStore('age'); // Fully type-safe
 
   return (
     // Receive the previous state snapshot and update the state accordingly
