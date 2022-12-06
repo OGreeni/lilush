@@ -4,10 +4,22 @@ A minimal, zero-dependency, TypeScript-first state manager for React
 
 ## Getting Started With Lilush
 
+### Installing Lilush
+Install Lilush with your favorite package manager.
+
+#### npm
+`npm install lilush`
+
+#### yarn
+`yarn add lilush`
+
+#### pnpm
+`pnpm add lilush`
+
 ### Creating a Store
 
 ```ts
-import { createStore } from '../hooks/useStore';
+import { createStore } from 'lilush';
 
 export const useStore = createStore(
   // Define the initial state object
